@@ -56,10 +56,12 @@ document.getElementById("info").innerHTML = `Hometown : ${data.homeTown} // Form
 
 data.members.forEach((item) => {
     document.getElementById("member").innerHTML += `
-    <div class="col-3 bg-light mt-3">
+    <div class="col-lg-3 col-11 bg-light mt-3 m-lg-0 mx-auto">
     <h3  class="text-center">${item.name}</h3>
-    <p><b>Secret identity : </b>${item.secretIdentity}</p>
-    <p><b>age :</b> ${item.age}</p>
-    <p><b>Superpowers :</b> ${item.powers}</p>
+    <ul>
+    <li><p><b>Secret identity : </b>${item.secretIdentity}</p></li>
+    <li><p><b>age :</b> ${item.age}</p></li>
+    <li><p><b>Superpowers :</b> ${item.powers}</p></li>
+    </ul>
     </div>`;
 })
